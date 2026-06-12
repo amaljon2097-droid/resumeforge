@@ -29,7 +29,7 @@ export default function GeneratePage() {
     }
     const uses = parseInt(localStorage.getItem('rf_uses') || '0');
     if (uses >= 2) {
-      setError('You have used your 2 free generations. Upgrade to Pro for unlimited access!');
+      window.location.href = 'https://digital-start-ups.lemonsqueezy.com/checkout/buy/8060dd98-ce3c-4e9e-842b-ef43acf490b2';
       return;
     }
     setLoading(true);
